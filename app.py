@@ -6,22 +6,22 @@ from flask import Flask, render_template, request, flash, jsonify
 app = Flask(__name__)
 app.secret_key = "imm_sukruburakcetin"
 
-# url = "http://www.koeri.boun.edu.tr/scripts/lst4.asp"
-#
-# sonuc = requests.get(url)
-# sonuc2 = BeautifulSoup(sonuc.content, "lxml")
-# liste = []
-# sonuc2 = sonuc2.text
-# sonuc2 = sonuc2.strip()
-# sonuc2 = sonuc2.split("\r")
-#
-# enlem = []
-# boylam = []
-# yer = []
-# tarih = []
-# saat = []
-# derinlik = []
-# buyukluk = []
+url = "http://www.koeri.boun.edu.tr/scripts/lst4.asp"
+
+sonuc = requests.get(url)
+sonuc2 = BeautifulSoup(sonuc.content, "lxml")
+liste = []
+sonuc2 = sonuc2.text
+sonuc2 = sonuc2.strip()
+sonuc2 = sonuc2.split("\r")
+
+enlem = []
+boylam = []
+yer = []
+tarih = []
+saat = []
+derinlik = []
+buyukluk = []
 #
 # for i in range(14, len(sonuc2) - 20):
 #     i = sonuc2[i].split()
