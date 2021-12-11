@@ -60,7 +60,7 @@ def greeter():
     return render_template("index.html")
 
 
-# # A route to return all of the available entries in our catalog.
-# @app.route('/api/v1/resources/earthquakes/all', methods=['GET'])
-# def api_all():
-#     return jsonify(df_p)
+# A route to return all of the available entries in our catalog.
+@app.route('/api/v1/resources/earthquakes/all', methods=['GET'])
+def api_all():
+    return jsonify(df_p)
