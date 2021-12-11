@@ -64,3 +64,6 @@ def greeter():
 @app.route('/api/v1/resources/earthquakes/all', methods=['GET'])
 def api_all():
     return jsonify(df_p)
+
+
+app.config['JSON_AS_ASCII'] = False
